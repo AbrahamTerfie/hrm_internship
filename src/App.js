@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {  Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 
 import Home from './Pages/Home'
@@ -16,11 +16,11 @@ export default function App() {
         <Route path="/home" component={Home} />
         <Route path="/payroll" component={Payroll} />
         <Route path="/employee" component={Employee} />
-        <Route component={Error}/>
+        <Route component={Error} />
 
 
 
       </Switch>
     </div>
-      )
+  )
 }
