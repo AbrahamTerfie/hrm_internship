@@ -5,7 +5,7 @@ import {  Route, Switch } from 'react-router-dom';
 import Home from './Pages/Home'
 import Payroll from './Pages/Payroll';
 import Employee from './Pages/Employee';
-import SignupLogin from './Pages/SignupLogin';
+import SignupLogin from './Pages/Signup';
 
 export default function App() {
   return (
