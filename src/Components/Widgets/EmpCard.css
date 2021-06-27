@@ -14,3 +14,20 @@
   background: linear-gradient(145deg, #ffffff, #e6e6e6);
   box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
 }
+
+.menucard {
+  width: 90%;
+  height: 8em;
+  justify-content: space-between;
+  margin: 3em;
+  border-radius: 15px;
+  transition: transform 0.5s ease-in;
+}
+
+.menucard :hover {
+  transform: scale(1.05);
+
+  transition: transform 0.5s ease-out;
+
+  /* background: linear-gradient(145deg, #ffffff, #e6e6e6); */
+}

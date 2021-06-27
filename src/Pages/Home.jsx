@@ -5,6 +5,7 @@ import Header from "../Components/Header";
 import Logo from "../logo.svg";
 import EmpCard from "../Components/Widgets/EmpCard";
 import "../Components/Widgets/EmpCard.css";
+import MenuCards from "../Components/Widgets/MenuCards";
 
 const empdatas = [
   {
@@ -48,6 +49,9 @@ export default function Home() {
             />
           );
         })}
+      </Row>
+      <Row>
+        <MenuCards />
       </Row>
     </div>
   );
