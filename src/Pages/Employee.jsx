@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Col,
   Row,
@@ -7,14 +7,20 @@ import {
   InputGroupAddon,
   InputGroupText,
   Input,
+  Collapse,
 } from "reactstrap";
 import Header from "../Components/Header";
 import ProfileCard from "../Components/Widgets/ProfileCard";
+import NewEmployeeForm from "../Components/Forms/NewEmployeeForm";
+
 const style = {
   margin: "30px",
 };
 
 export default function Employee() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => setIsOpen(!isOpen);
   return (
     <div>
       <Header />
@@ -36,9 +42,19 @@ export default function Employee() {
         </Row>
 
         <Row>
-          <Button color="warning" outline block>
+          <Button
+            color="warning"
+            outline
+            block
+            onClick={toggle}
+            style={{ marginBottom: "1rem" }}
+          >
             Add New Employee
           </Button>
+
+          <Collapse isOpen={isOpen}>
+            <NewEmployeeForm />
+          </Collapse>
         </Row>
       </Row>
 
