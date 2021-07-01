@@ -5,6 +5,7 @@
 import React from 'react';
 import './EmpCard.css'
 import { Card, Button, CardTitle, CardText, Row, Col } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 const MenuCards = (props) => {
     return (
@@ -12,11 +13,15 @@ const MenuCards = (props) => {
 
             <Row className="menucard">
                 <Col className="indivusalCard">
-                    <Card body inverse color="info">
-                        <CardTitle tag="h5">Employee Management</CardTitle>
-                        <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
 
-                    </Card>
+                    <Link to="/employee">
+
+                        <Card body inverse color="info">
+                            <CardTitle tag="h5">Employee Management</CardTitle>
+                            <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
+
+                        </Card>
+                    </Link>
                 </Col>
                 <Col className="indivusalCard">
                     <Card body inverse color="warning">
